@@ -11,7 +11,7 @@ export WORKSPACE=$PWD
 
 if [ ! -d hudson ]
 then
-git clone git://github.com/erolmutlu/hudson.git
+git clone https://bitbucket.org/erolmutlu/hudson.git
 fi
 
 cd hudson
