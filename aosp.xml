@@ -8,9 +8,9 @@
   <remote name="private"
       fetch="ssh://git@github.com" />
       
-  <default revision="jellybean"
+  <!-- default revision="jellybean"
                remote="github"
-               sync-j="4" />
+               sync-j="4" / -->
                
   <project name="teamhacksung/buildscripts" path="buildscripts" remote="github" revision="jellybean">
     <copyfile dest="build.sh" src="samsung/build.sh" />
