@@ -5,7 +5,7 @@
   </project>
   <project name="teamhacksung/android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" revision="jellybean" />
   <project name="teamhacksung/android_device_samsung_i9100" path="device/samsung/i9100" remote="github" revision="jellybean" />
-  <project name="teamhacksung/android_kernel_samsung_smdk4210" path="kernel/samsung/smdk4210" remote="github" revision="jellybean" />
+  <project name="teamhacksung/android_kernel_samsung_smdk4210_new" path="kernel/samsung/smdk4210" remote="github" revision="jellybean" />
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" revision="jellybean" />
   <project name="CyanogenMod/android_hardware_samsung" path="hardware/samsung" remote="github" revision="jellybean" />
   <project name="CyanogenMod/android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="github" revision="jellybean" />
