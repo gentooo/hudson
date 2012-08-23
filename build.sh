@@ -106,7 +106,7 @@ echo Local Manifest:
 cat .repo/local_manifest.xml
 
 echo Syncing...
-repo sync -d > /dev/null 2> /tmp/jenkins-sync-errors.txt
+repo sync -d > /dev/null
 check_result "repo sync failed."
 echo Sync complete.
 
@@ -164,9 +164,9 @@ then
   fi
 fi
 
-if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "50.0" ]
+if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "200.0" ]
 then
-  ccache -M 50G
+  ccache -M 200G
 fi
 
 make $CLEAN_TYPE
