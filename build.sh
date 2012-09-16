@@ -63,7 +63,9 @@ unset BUILD_NUMBER
 export PATH=~/bin:$PATH
 
 export USE_CCACHE=1
+export CCACHE_NLEVELS=4
 export BUILD_WITH_COLORS=0
+export CM_FAST_BUILD=1
 
 REPO=$(which repo)
 if [ -z "$REPO" ]
@@ -90,7 +92,14 @@ repo init -u $SYNC_PROTO://github.com/gentooo/android.git -b $CORE_BRANCH
 check_result "repo init failed."
 
 # make sure ccache is in PATH
+if [ "$REPO_BRANCH" == "jellybean" ]
+then
+export PATH="$PATH:/opt/local/bin/:$PWD/prebuilts/misc/$(uname|awk '{print tolower($0)}')-x86/ccache"
+export CCACHE_DIR=~/.jb_ccache
+else
 export PATH="$PATH:/opt/local/bin/:$PWD/prebuilt/$(uname|awk '{print tolower($0)}')-x86/ccache"
+export CCACHE_DIR=~/.ics_ccache
+fi
 
 if [ -f ~/.jenkins_profile ]
 then
@@ -164,13 +173,13 @@ then
   fi
 fi
 
-if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "200.0" ]
+if [ ! "$(ccache -s|grep -E 'max cache size'|awk '{print $4}')" = "100.0" ]
 then
-  ccache -M 200G
+  ccache -M 100G
 fi
 
 make $CLEAN_TYPE
-mka bacon recoveryzip recoveryimage checkapi
+time mka bacon recoveryzip recoveryimage checkapi
 check_result "Build failed."
 
 cp $OUT/cm-*.zip* $WORKSPACE/archive
