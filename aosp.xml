@@ -3,6 +3,7 @@
   <project name="teamhacksung/buildscripts" path="buildscripts" remote="gh" revision="jellybean">
     <copyfile dest="build.sh" src="samsung/build.sh" />
   </project>
+  <project path="vendor/supernexus" name="gentooo/android_vendor_supernexus" remote="gh" revision="jellybean" />
   <project name="android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="cm" revision="jellybean" />
   <project name="android_device_samsung_i9100" path="device/samsung/i9100" remote="cm" revision="jellybean" />
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="gh" revision="jellybean" />
