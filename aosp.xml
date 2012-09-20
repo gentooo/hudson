@@ -8,7 +8,9 @@
   <project name="android_vendor_cm" path="vendor/cm" remote="cm" revision="jellybean" />
   <project name="android_device_samsung_i9100" path="device/samsung/i9100" remote="cm" revision="jellybean" />
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="gh" revision="jellybean" />
-  <project name="android_kernel_samsung_smdk4210" path="kernel/samsung/smdk4210" remote="cm" revision="jellybean" />
+  <project name="gokhanmoral/siyahkernel3" path="kernel/samsung/smdk4210" remote="gh" revision="ics-3.0.15">
+    <copyfile dest="arch/arm/configs/siyah_defconfig" src="arch/arm/configs/cyanogenmod_i9100_defconfig" />
+  </project>
   <project name="android_hardware_samsung" path="hardware/samsung" remote="cm" revision="jellybean" />
   <project name="android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="cm" revision="jellybean" />
 </manifest>
