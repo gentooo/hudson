@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- project path="vendor/supernexus" name="gentooo/android_vendor_supernexus" remote="gh" revision="jellybean" / -->
+  <project path="vendor/supernexus" name="gentooo/android_vendor_supernexus" remote="gh" revision="jellybean" />
   <project name="android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="cm" revision="jellybean" />
   <project name="android_vendor_cm" path="vendor/cm" remote="cm" revision="jellybean" />
   <project name="android_device_samsung_i9100" path="device/samsung/i9100" remote="cm" revision="jellybean" />
@@ -9,5 +9,4 @@
   <project name="gokhanmoral/siyahkernel3" path="kernel/samsung/siyah" remote="gh" revision="ics-3.0.15" />
   <project name="android_hardware_samsung" path="hardware/samsung" remote="cm" revision="jellybean" />
   <project name="android_packages_apps_SamsungServiceMode" path="packages/apps/SamsungServiceMode" remote="cm" revision="jellybean" />
-
 </manifest>
