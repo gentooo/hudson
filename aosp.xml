@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <project name="android_device_samsung_galaxys2-common" path="device/samsung/galaxys2-common" remote="cm" revision="jellybean" />
-  <project name="gentooo/android_vendor_cm" path="vendor/cm" remote="gh" revision="jellybean" />
-  <project name="android_device_samsung_i9100" path="device/samsung/i9100" remote="cm" revision="jellybean" />
+  <project name="android_vendor_cm" path="vendor/cm" remote="cm" revision="jellybean" />
+  <project name="gentooo/android_device_samsung_i9100" path="device/samsung/i9100" remote="gh" revision="jellybean" />
   <project name="TheMuppets/proprietary_vendor_samsung" path="vendor/samsung" remote="gh" revision="jellybean" />
   <project name="android_kernel_samsung_smdk4210" path="kernel/samsung/smdk4210" remote="cm" revision="jellybean" />
   <project name="android_hardware_samsung" path="hardware/samsung" remote="cm" revision="jellybean" />
